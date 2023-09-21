@@ -1,0 +1,41 @@
+union
+
+#include <stdio.h>
+
+union MyUnion {
+    int i;
+    float f;
+};
+
+int main() {
+    union MyUnion u;
+
+    u.i = 42;
+    printf("Integer: %d\n", u.i);
+
+    u.f = 3.14;
+    printf("Float: %f\n", u.f);
+
+    return 0;
+}
+
+
+enum
+
+#include <stdio.h>
+
+int main() {
+    int isTrue = 1;
+
+    if (isTrue) {
+        printf("참(True)입니다.\n");
+    } else {
+        printf("거짓(False)입니다.\n");
+    }
+
+    return 0;
+}
+
+
+소감
+union 과 enum에 대해서 좀 더 자세히 알 수 있어서 좋았고, 예제를 만들어 보면서 이것 저것을 찾아보면서 어떤식으로 활용되는지 또 어떤 부분에서 좋은지를 알게되어서 좋았습니다. 지금은 저렇게 간단한 문제만 만들었지만 열심히해서 좀 더 어렵고 복잡한 예제도 쉽게 만들 수 있는 그런 사람이 되고싶다고 생각했습니다.
